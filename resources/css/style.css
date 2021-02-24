@@ -1,0 +1,467 @@
+/*---------------------------------------*/
+/*---------Basic setup-------------------*/
+/*---------------------------------------*/
+*{
+	margin : 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html{
+	background-color: #fff;
+	color: #555;
+	font-family:"lato";
+	font-weight: 300;
+	font-size: 20px;
+	text-rendering: optimizeLegibility;
+}
+
+/*---------Header insert background imh----------------*/
+header{
+	background-image:-webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.58)),to(rgba(0, 0, 0, 0.58))), url(img/hero.jpg);
+	background-image:linear-gradient(rgba(0, 0, 0, 0.58),rgba(0, 0, 0, 0.58)), url(img/hero.jpg);
+	height: 100vh;
+	background-size:cover;
+	background-position:center;
+	background-attachment: fixed;
+	}
+*/
+.row {
+	max-width: 1140px;
+	margin-top: 0;
+	margin-bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.section{
+	padding:80px 0; 
+}
+.box{
+	padding: 10px;
+}
+
+.hero-text-box {
+	position: absolute;
+	width:1140px;
+	top:50%;
+	left:50%;
+	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	}
+/*---------headings-------------------*/
+h1,
+h2{
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	word-spacing: 4px;
+}
+h1{
+	margin: 0;
+	font-size:200%;
+	font-weight: 300%;
+	color: #fff;
+}
+h2{
+	font-size: 180%;
+	font-weight: 200%; 
+	word-spacing: 3px;
+    text-align: center;
+	margin-bottom: 20px;
+	
+}
+h2:after{
+	display: block;
+	height: 3px;
+	width: 100px;
+	content:" ";
+	background-color:#f1c40f;
+	margin: 0 auto; /*(top bottom) (left right)*/
+	margin-top: 10px;
+}
+h3{
+	font-size: 100%;
+	font-weight: 80%;
+	color: #000;
+}
+
+
+
+
+
+/*---------paragraphs-------------------*/
+.long-copy{
+	line-height: 150%;
+	width: 70%;
+    margin:0 auto;
+	word-spacing:1px;
+	margin-bottom: 30px;
+	
+}
+
+
+
+
+/*---------buttons-------------------*/
+.btn:link,
+.btn:visited,
+input[type=submit] {
+	display: inline-block;
+	padding: 10px 30px;
+	text-decoration: none;
+	-webkit-transition: background-color 0.2s , border 0.2s ,color 0.2s;
+	transition: background-color 0.2s , border 0.2s ,color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit]{
+	color: #000;
+	background-color: #f1c40f;
+	border: 1px solid #f1c40f;
+	border-radius: 20px;
+	margin-right: 2px;
+}
+	
+
+.btn-ghost:link,
+.btn-ghost:visited{
+	color:#fff;
+
+	border: 1px solid #f1c40f;
+	border-radius: 20px;
+}
+.btn:hover,/*period when crusor is on the object i.e btns*/
+.btn:active
+{
+	background-color:#fff;
+}
+.btn-full:hover,
+.btn-full:active,
+input[type=submit]:hover,
+input[type=submit]:active{
+	background-color: #fff;
+	border: 1px solid #fff;
+	color: #080808;
+	-webkit-transition-duration:1s;
+	transition-duration:1s; /*animation:i.e line takes 1s to apper on web site*/
+
+}
+
+.btn-ghost:hover,
+.btn-ghost:active{
+	color:#000;
+	border: 1px solid #c29d0b;
+	-webkit-transition-duration:1s;
+	transition-duration:1s;
+}
+	
+	 
+
+.logo {
+	height: 100px;
+	float: left;
+	margin-left: 10px;
+	margin-top: 22px;
+}
+
+.main-nav {
+	float: right;
+	list-style: none;
+	margin-top: 50px;
+}
+.main-nav li a:link,
+ .main-nav li a:visited{
+	padding:1px 6px;
+	color: #fff;
+	font-size: 15px;
+	text-transform: uppercase;
+	text-decoration:none;
+	border-bottom: 2px solid transparent;
+	-webkit-transition-duration:1s;
+	transition-duration:1s;
+ }
+.main-nav li a:hover,
+.main-nav li a:active{
+	border-bottom: 1px solid #c29d0b;
+	
+
+}
+
+.main-nav li {
+	display:inline-block;
+	margin-left: 20px;
+	
+}
+
+
+
+
+/*---------------------------------------*/
+/*---------meal photos-------------------*/
+/*---------------------------------------*/
+
+.meal-showcase{
+	list-style: none;
+	width: 100%;
+}
+.meal-showcase li{
+	display: block;
+	float: right;
+	width: 25%;
+}
+.meal-photos{
+	width:100%; /*100% of meal-showcase*/
+	margin:10;                                              /*to animate the photos creat two different classes in first class fix width, manage overflow,background color of                                                              theimg then inside the img animate*/
+	overflow: hidden;
+	background-color: #000;
+}
+.meal-photos img{
+	width:100%;
+	-webkit-transform: scale(2.15);
+	transform: scale(1.15);/*magnifies the pic to 115%*/
+	
+	opacity:0.75;/*makes img 75% transparent respective of the background colour*/
+
+}
+.meal-photos img:hover{
+
+	transform: scale(1.03);
+	opacity:5; 
+	-webkit-transition-duration:1s; 
+	transition-duration:1s;
+	
+}
+
+/*------------------------*/
+/*------------------------*/
+/*-----how it works------*/
+
+.section-steps{
+	background-color:#e0e0e0; 
+}
+.app-screen {
+	width:40%;
+	float:left
+}
+.work-setups {
+	font-size:20px ;
+	text-align:center;
+	
+}
+		
+.step-box{
+	padding: 2px;
+	margin-top: 20px;
+}
+.step-box:first-child{
+	padding-right:2%; 
+}
+.step-box:last-child{
+	padding-left:2% 
+}
+.work-setups div{
+	display:inline-block;
+	color:#f1c40f;
+	border:2px solid #f1c40f;
+	border-radius:50%;
+	height:40px;
+	width: 40px;
+	text-align:center;
+	font-size: 120%;
+	padding:5px;
+	float: left;
+	margin-right:5px;
+	
+}
+.work-setups div p {
+	text-align: end;
+	
+}
+
+
+
+.app img {
+	width:100px;
+	margin-left: 20px;
+	float: left;
+
+	
+}
+.appi img{
+	width: 110px;
+	float: right;
+	display:inline-block;
+	margin-top: 2px;
+		}
+
+
+
+
+/*-------CITIES--------------*/
+/*-------CITIES--------------*/
+/*-------CITIES--------------*/
+
+.city-img {
+	background-color:#000;
+	overflow: hidden;
+	width:119%;
+	margin:0;
+	padding:3px;
+	height:auto;
+	margin-bottom:5px;
+	opacity:0.8;
+	-webkit-transform:scale(1.05);
+	transform:scale(1.05);
+		
+}
+.city-img img{
+	width: 100%;
+	-webkit-transform: scale(1.15);
+	transform: scale(1.15);
+	-webkit-transition-duration:1s;
+	transition-duration:1s;
+	opacity:0.75;
+}
+.city-img img:hover{
+	-webkit-transform: scale(1.03);
+	transform: scale(1.03);
+	opacity:1; 
+	-webkit-transition-duration:1s; 
+	transition-duration:1s;
+	
+}
+ .text {
+	
+	margin-top:2px;
+	text-align: center;
+}
+
+/*-------REVIEWS--------------*/
+/*-------REVIEWS--------------*/
+/*-------REVIEWS--------------*/
+
+.reviews {
+	background-image:-webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.7)),to(rgba(8, 8, 8, 0.7))), url(img/back-customers.jpg);
+	background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(8, 8, 8, 0.7)), url(img/back-customers.jpg);
+	color: #fff;
+	background-attachment: fixed;
+
+}
+blockquote{
+	padding:2%;
+	font-size: italic;
+	margin-bottom: 10px;
+	position:relative;
+}
+blockquote:before{
+	content:"\201c";
+	font-size:300%;
+	display: block;
+	position: absolute;
+	top:-15px;
+	left:-15px;
+}
+
+cite{
+	font-size:90%;
+    display: block;
+}
+
+cite img{
+	height:50px;
+	border-radius:50%;
+	margin-right: 10px;
+	vertical-align: middle;
+	
+	/*------PREMIUM--------*/
+	/*------PRO--------*/
+	/*------STATER --------*/
+}
+.plans {
+	background-color:#eaeaea;
+	
+}
+
+.plan-box {
+	background-color:#fff;
+	border-radius:3px;
+	width:90%;
+	margin-left: 5px;	 
+}
+.plan-box div{
+	padding: 8px;
+	border-bottom: 0.5px solid #454343;
+}
+.plan-box div:last-child{                                                         /*select the content of the last div aka class of parent class ala div in this case*/
+text-align:center; 
+}
+text-align: center;           
+.plan-price{
+	font-size:250%;
+	margin-bottom: 5px;
+}
+.plan-price span{
+	font-size:70%;
+	font-style: italic;
+	color:#f1c40f;
+}
+.plan-price-meal{
+	font-size:85%;
+}
+
+
+/*---------------------------------------*/
+/*----------------Form-------------------*/
+/*---------------------------------------*/
+
+
+.contect-form {
+	width:60%;
+	display: block;
+	padding: 5px;
+	margin: 0 auto;
+}
+input[type=text],
+input[type=email],
+select,
+textarea{
+	width:140%;
+	padding:5px;
+}
+/*---------------------------------------*/
+/*----------------FOOTER-------------------*/
+/*---------------------------------------*/
+footer{
+	background-color: rgba(21, 21, 21, 0.62);
+}
+
+.footer-nav {
+	list-style: none;
+	float: left;
+	}
+
+.footer-nav li,
+.social li{
+	display: inline-block;
+	margin: 20px;
+
+}
+
+.social {
+	list-style: none;
+	float: right;
+	margin-left: 240px
+	
+}
+h4{
+	font-size: 90%;
+	font-weight:60%;
+	color: #f1c40f;
+	
+	
+}
+
+.span-1-of-4 {
+	
+}
